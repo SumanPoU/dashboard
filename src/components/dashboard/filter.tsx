@@ -41,7 +41,7 @@ export default function FilterPanel({
       <div className="space-y-4">
         <h3 className="font-semibold text-foreground">Filters</h3>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {/* Search */}
           <div className="space-y-2">
             <label className="text-sm font-medium text-muted-foreground">
@@ -90,20 +90,22 @@ export default function FilterPanel({
               </SelectContent>
             </Select>
           </div>
-        </div>
 
-        {/* Reset Button */}
-        {isFiltered && (
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={onReset}
-            className="w-full bg-transparent"
-          >
-            <X className="h-4 w-4 mr-2" />
-            Reset Filters
-          </Button>
-        )}
+          <div className="md:mt-6">
+            {/* Reset Button */}
+            {isFiltered && (
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={onReset}
+                className="w-full bg-transparent"
+              >
+                <X className="h-4 w-4 mr-2" />
+                Reset Filters
+              </Button>
+            )}
+          </div>
+        </div>
       </div>
     </Card>
   );

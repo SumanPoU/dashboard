@@ -24,17 +24,17 @@ async function loadTransactions(): Promise<Transaction[]> {
 
 export async function GET(req: Request) {
   try {
-    const data = await loadTransactions();
+    const allData = await loadTransactions();
     const { searchParams } = new URL(req.url);
 
-    let results: Transaction[] = [...data];
+    // Make a copy for filtering only the data
+    let filteredData: Transaction[] = [...allData];
 
     // SEARCH
-
     const search = searchParams.get("search");
     if (search) {
       const term = search.toLowerCase();
-      results = results.filter(
+      filteredData = filteredData.filter(
         (t) =>
           t.description.toLowerCase().includes(term) ||
           t.category.toLowerCase().includes(term)
@@ -42,39 +42,39 @@ export async function GET(req: Request) {
     }
 
     // CATEGORY FILTER
-
     const category = searchParams.get("category");
     if (category && category !== "All") {
-      results = results.filter((t) => t.category === category);
+      filteredData = filteredData.filter((t) => t.category === category);
     }
 
     // TYPE FILTER
-
     const type = searchParams.get("type");
     if (type && type !== "All") {
-      results = results.filter((t) => t.type === type);
+      filteredData = filteredData.filter((t) => t.type === type);
     }
 
     // DATE RANGE
-
     const startDate = searchParams.get("startDate");
     const endDate = searchParams.get("endDate");
 
     if (startDate) {
-      results = results.filter((t) => new Date(t.date) >= new Date(startDate));
+      filteredData = filteredData.filter(
+        (t) => new Date(t.date) >= new Date(startDate)
+      );
     }
 
     if (endDate) {
-      results = results.filter((t) => new Date(t.date) <= new Date(endDate));
+      filteredData = filteredData.filter(
+        (t) => new Date(t.date) <= new Date(endDate)
+      );
     }
 
     // SORTING
-
     const sortBy = searchParams.get("sortBy");
     const order = searchParams.get("order") === "asc" ? "asc" : "desc";
 
     if (sortBy) {
-      results.sort((a, b) => {
+      filteredData.sort((a, b) => {
         let A: any = a[sortBy as keyof Transaction];
         let B: any = b[sortBy as keyof Transaction];
 
@@ -98,27 +98,24 @@ export async function GET(req: Request) {
     }
 
     // PAGINATION
-
     const page = Number(searchParams.get("page")) || 1;
     const limit = Number(searchParams.get("limit")) || 20;
-
     const start = (page - 1) * limit;
-    const paginated = results.slice(start, start + limit);
+    const paginatedData = filteredData.slice(start, start + limit);
 
     const meta = {
-      total: results.length,
+      total: filteredData.length,
       page,
       limit,
-      totalPages: Math.ceil(results.length / limit),
+      totalPages: Math.ceil(filteredData.length / limit),
     };
 
-    // SUMMARY CALCULATION
-
-    const totalIncome = results
+    // SUMMARY CALCULATION (always full dataset)
+    const totalIncome = allData
       .filter((t) => t.type === "income")
       .reduce((sum, t) => sum + Number(t.amount), 0);
 
-    const totalExpenses = results
+    const totalExpenses = allData
       .filter((t) => t.type === "expense")
       .reduce((sum, t) => sum + Number(t.amount), 0);
 
@@ -130,11 +127,9 @@ export async function GET(req: Request) {
       balance,
     };
 
-    // CATEGORY-WISE EXPENSES
-    
+    // CATEGORY-WISE EXPENSES (always full dataset)
     const categoryMap = new Map<string, number>();
-
-    results
+    allData
       .filter((t) => t.type === "expense")
       .forEach((t) => {
         const previous = categoryMap.get(t.category) || 0;
@@ -147,17 +142,12 @@ export async function GET(req: Request) {
           ? Number(((total / totalExpenses) * 100).toFixed(2))
           : 0;
 
-      return {
-        category,
-        total,
-        percentage,
-      };
+      return { category, total, percentage };
     });
 
     // RESPONSE
-
     return NextResponse.json({
-      data: paginated,
+      data: paginatedData,
       meta,
       summary,
       categoryExpenses,

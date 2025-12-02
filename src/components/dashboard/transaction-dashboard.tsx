@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useCallback, useMemo } from "react";
+import { useState, useCallback, useMemo, useEffect } from "react";
+import { useSearchParams, useRouter } from "next/navigation";
 import useSWR from "swr";
 import TransactionTable from "./transaction-table";
 import SummaryCards from "./summary-cards";
@@ -24,29 +25,39 @@ interface Transaction {
 
 interface ApiResponse {
   data: Transaction[];
-  meta: {
-    total: number;
-    page: number;
-    limit: number;
-    totalPages: number;
-  };
-  summary: {
-    totalIncome: number;
-    totalExpenses: number;
-    balance: number;
-  };
-  categoryExpenses: {
-    category: string;
-    total: number;
-    percentage: number;
-  }[];
+  meta: { total: number; page: number; limit: number; totalPages: number };
+  summary: { totalIncome: number; totalExpenses: number; balance: number };
+  categoryExpenses: { category: string; total: number; percentage: number }[];
 }
 
 export default function TransactionDashboard() {
-  const [selectedCategory, setSelectedCategory] = useState<string>("All");
-  const [selectedType, setSelectedType] = useState<string>("All");
-  const [currentPage, setCurrentPage] = useState(1);
-  const [searchTerm, setSearchTerm] = useState("");
+  const searchParams = useSearchParams();
+  const router = useRouter();
+
+  // Initialize state from URL or defaults
+  const [selectedCategory, setSelectedCategory] = useState(
+    searchParams.get("category") || "All"
+  );
+  const [selectedType, setSelectedType] = useState(
+    searchParams.get("type") || "All"
+  );
+  const [currentPage, setCurrentPage] = useState(
+    parseInt(searchParams.get("page") || "1")
+  );
+  const [searchTerm, setSearchTerm] = useState(
+    searchParams.get("search") || ""
+  );
+
+  // Update URL when filters change
+  useEffect(() => {
+    const params = new URLSearchParams();
+    if (selectedCategory !== "All") params.set("category", selectedCategory);
+    if (selectedType !== "All") params.set("type", selectedType);
+    if (searchTerm) params.set("search", searchTerm);
+    if (currentPage !== 1) params.set("page", String(currentPage));
+
+    router.replace(`?${params.toString()}`, { scroll: false });
+  }, [selectedCategory, selectedType, searchTerm, currentPage, router]);
 
   const queryParams = useMemo(() => {
     const params = new URLSearchParams();
@@ -87,7 +98,6 @@ export default function TransactionDashboard() {
   return (
     <div className="min-h-screen bg-background p-4 md:p-8">
       <div className="container max-w-7xl mx-auto">
-        {/* Header */}
         <div className="mb-8">
           <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
             Transaction Tracker
@@ -97,7 +107,6 @@ export default function TransactionDashboard() {
           </p>
         </div>
 
-        {/* Summary Cards */}
         <SummaryCards summary={data?.summary} isLoading={isLoading} />
 
         <SpendingChart
@@ -116,7 +125,6 @@ export default function TransactionDashboard() {
           onReset={handleResetFilters}
         />
 
-        {/* Transaction Table */}
         <div className="my-6">
           <TransactionTable
             transactions={data?.data || []}
