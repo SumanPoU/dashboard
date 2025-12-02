@@ -140,7 +140,7 @@ export default function TransactionTable({
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 justify-between px-6 py-2">
-        <div className="hidden md:inline-block text-sm text-muted-foreground  items-center">
+        <div className="hidden md:inline-block text-sm text-muted-foreground text-baseline py-2 ">
           Page {currentPage} of {totalPages}
         </div>
 

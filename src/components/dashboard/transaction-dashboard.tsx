@@ -5,6 +5,7 @@ import useSWR from "swr";
 import TransactionTable from "./transaction-table";
 import SummaryCards from "./summary-cards";
 import SpendingChart from "./spending-chart";
+import FilterPanel from "./filter";
 
 const fetcher = async (url: string) => {
   const res = await fetch(url);
@@ -102,6 +103,17 @@ export default function TransactionDashboard() {
         <SpendingChart
           categoryExpenses={data?.categoryExpenses ?? []}
           isLoading={isLoading}
+        />
+
+        <FilterPanel
+          categories={categories}
+          selectedCategory={selectedCategory}
+          onCategoryChange={setSelectedCategory}
+          selectedType={selectedType}
+          onTypeChange={setSelectedType}
+          searchTerm={searchTerm}
+          onSearchChange={setSearchTerm}
+          onReset={handleResetFilters}
         />
 
         {/* Transaction Table */}
