@@ -70,7 +70,7 @@
 
 :root {
   --radius: 0.375rem;
-  --background: oklch(0.9779 0.0042 56.3756);
+  --background: oklch(1 0 0);
   --foreground: oklch(0.2178 0 0);
   --card: oklch(0.9779 0.0042 56.3756);
   --card-foreground: oklch(0.2178 0 0);
@@ -189,7 +189,14 @@
   }
 }
 
-
 *{
   font-family: var(--font-jost);
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;    
 }

@@ -105,7 +105,7 @@ export default function TransactionDashboard() {
         />
 
         {/* Transaction Table */}
-        <div className="mt-8">
+        <div className="my-6">
           <TransactionTable
             transactions={data?.data || []}
             isLoading={isLoading}
