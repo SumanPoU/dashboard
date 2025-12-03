@@ -48,7 +48,7 @@ export function AppSidebar() {
                   height={28}
                   alt="Store Logo"
                 />
-                <span>Shop Sphere</span>
+                <span>Track</span>
               </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
