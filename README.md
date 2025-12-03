@@ -34,3 +34,7 @@ npm i
 ```bash
 npm run dev
 ```
+
+## Note
+
+The Add Transaction feature does not work on the Vercel live demo because Vercel uses a read-only file system. It works correctly when running the project locally.
