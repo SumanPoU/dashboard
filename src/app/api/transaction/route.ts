@@ -25,6 +25,12 @@ async function loadTransactions(): Promise<Transaction[]> {
 
 // Save JSON file
 async function saveTransactions(transactions: Transaction[]) {
+  if (process.env.VERCEL) {
+    return NextResponse.json(
+      { success: false, message: "File writing not supported on Vercel" },
+      { status: 500 }
+    );
+  }
   const filePath = path.join(
     process.cwd(),
     "public",
