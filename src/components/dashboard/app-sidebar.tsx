@@ -31,6 +31,7 @@ import {
 } from "@/components/ui/collapsible";
 import { menuItems } from "./menu-items";
 
+
 export function AppSidebar() {
   return (
     <Sidebar collapsible="icon" className="overflow-x-hidden">

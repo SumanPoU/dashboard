@@ -7,6 +7,7 @@ import TransactionTable from "./transaction-table";
 import SummaryCards from "./summary-cards";
 import SpendingChart from "./spending-chart";
 import FilterPanel from "./filter";
+import AddTransaction from "./add-transaction";
 
 const fetcher = async (url: string) => {
   const res = await fetch(url);
@@ -98,13 +99,16 @@ export default function TransactionDashboard() {
   return (
     <div className="min-h-screen bg-background p-4 md:p-8">
       <div className="container max-w-7xl mx-auto">
-        <div className="mb-8">
-          <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
-            Transaction Tracker
-          </h1>
-          <p className="text-muted-foreground">
-            Monitor your income and expenses with detailed analytics
-          </p>
+        <div className="flex flex-col sm:flex-row md:justify-between mb-8">
+          <div className="">
+            <h1 className="text-2xl md:text-4xl font-semibold md:font-bold text-foreground mb-2">
+              Transaction Tracker
+            </h1>
+            <p className=" hidden md:inline-block text-muted-foreground">
+              Monitor your income and expenses with detailed analytics
+            </p>
+          </div>
+          <AddTransaction />
         </div>
 
         <SummaryCards summary={data?.summary} isLoading={isLoading} />

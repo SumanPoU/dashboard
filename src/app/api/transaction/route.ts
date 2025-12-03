@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import path from "path";
 import { promises as fs } from "fs";
+import { success } from "zod";
 
 interface Transaction {
   id: number;
@@ -20,6 +21,16 @@ async function loadTransactions(): Promise<Transaction[]> {
   );
   const file = await fs.readFile(filePath, "utf-8");
   return JSON.parse(file);
+}
+
+// Save JSON file
+async function saveTransactions(transactions: Transaction[]) {
+  const filePath = path.join(
+    process.cwd(),
+    "public",
+    "TrackerTransaction.json"
+  );
+  await fs.writeFile(filePath, JSON.stringify(transactions, null, 2), "utf-8");
 }
 
 export async function GET(req: Request) {
@@ -156,6 +167,52 @@ export async function GET(req: Request) {
     console.error("Error loading transactions:", err);
     return NextResponse.json(
       { error: "Failed to load transactions" },
+      { status: 500 }
+    );
+  }
+}
+
+export async function POST(req: Request) {
+  try {
+    const body = await req.json();
+
+    const { description, amount, type, category, date } = body;
+
+    if (!description || !amount || !type || !category) {
+      return NextResponse.json(
+        { error: "Missing required fields" },
+        { status: 400 }
+      );
+    }
+
+    const allData = await loadTransactions();
+
+    // Generate new ID
+    const newId = allData.length > 0 ? allData[allData.length - 1].id + 1 : 1;
+
+    const newTransaction: Transaction = {
+      id: newId,
+      description,
+      amount: Number(amount),
+      type,
+      category,
+      date: date || new Date().toISOString().split("T")[0],
+    };
+
+    allData.push(newTransaction);
+
+    // Save back to JSON
+    await saveTransactions(allData);
+
+    return NextResponse.json({
+      success: true,
+      message: "Transaction added successfully!",
+      transaction: newTransaction,
+    });
+  } catch (err) {
+    console.error("Error adding transaction:", err);
+    return NextResponse.json(
+      { success: false, message: "Failed to add transaction" },
       { status: 500 }
     );
   }

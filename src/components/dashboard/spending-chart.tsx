@@ -13,6 +13,7 @@ import {
   Cell,
 } from "recharts";
 import { Card } from "@/components/ui/card";
+import formatCurrency from "@/lib/format-currency";
 
 interface CategoryExpense {
   category: string;
@@ -76,7 +77,7 @@ export default function SpendingCharts({
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 w-full my-6">
       {/* Pie Chart */}
-      <Card className="lg:col-span-1 p-6 flex flex-col justify-between bg-card border border-border">
+      <Card className="lg:col-span-1 p-2 md:p-6 flex flex-col justify-between bg-card border border-border">
         <h3 className="text-lg font-semibold mb-4 text-foreground">
           Spending Distribution
         </h3>
@@ -95,21 +96,14 @@ export default function SpendingCharts({
                   <Cell key={entry.name} fill={COLORS[index % COLORS.length]} />
                 ))}
               </Pie>
-              <Tooltip
-                formatter={(value: number) =>
-                  new Intl.NumberFormat("en-US", {
-                    style: "currency",
-                    currency: "USD",
-                  }).format(value)
-                }
-              />
+              <Tooltip formatter={(value: number) => formatCurrency(value)} />
             </PieChart>
           </ResponsiveContainer>
         </div>
       </Card>
 
       {/* Bar Chart */}
-      <Card className="lg:col-span-2 p-6 flex flex-col justify-between bg-card border border-border">
+      <Card className="lg:col-span-2 p-2 md:p-6 flex flex-col justify-between bg-card border border-border">
         <h3 className="text-lg font-semibold mb-4 text-foreground">
           Expense by Category
         </h3>
@@ -125,14 +119,7 @@ export default function SpendingCharts({
                 tick={{ fontSize: 12 }}
               />
               <YAxis type="number" tick={{ fontSize: 12 }} />
-              <Tooltip
-                formatter={(value: number) =>
-                  new Intl.NumberFormat("en-US", {
-                    style: "currency",
-                    currency: "USD",
-                  }).format(value)
-                }
-              />
+              <Tooltip formatter={(value: number) => formatCurrency(value)} />
               <Bar dataKey="total">
                 {barData.map((entry, index) => (
                   <Cell

@@ -8,7 +8,25 @@ import {
   UsersRound,
 } from "lucide-react";
 
-export const menuItems = [
+export interface MenuSubItem {
+  label: string;
+  url: string;
+  icon?: any;
+}
+
+export interface MenuItem {
+  label: string;
+  url?: string;
+  icon: any;
+  subItems?: MenuSubItem[];
+}
+
+export interface MenuGroup {
+  group: string;
+  items: MenuItem[];
+}
+
+export const menuItems: MenuGroup[] = [
   {
     group: "Transaction Management",
     items: [

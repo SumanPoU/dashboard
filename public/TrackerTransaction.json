@@ -49,7 +49,7 @@
   },
   {
     "id": 7,
-    "description": "Restaurant dine\u2011in expense",
+    "description": "Restaurant dine‑in expense",
     "amount": 17.15,
     "type": "expense",
     "category": "Food",
@@ -73,7 +73,7 @@
   },
   {
     "id": 10,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 344.96,
     "type": "income",
     "category": "Health",
@@ -105,7 +105,7 @@
   },
   {
     "id": 14,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 1872.5,
     "type": "income",
     "category": "Work",
@@ -137,7 +137,7 @@
   },
   {
     "id": 18,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 358.98,
     "type": "income",
     "category": "Salary",
@@ -169,7 +169,7 @@
   },
   {
     "id": 22,
-    "description": "Restaurant dine\u2011in expense",
+    "description": "Restaurant dine‑in expense",
     "amount": 275.07,
     "type": "expense",
     "category": "Other",
@@ -185,7 +185,7 @@
   },
   {
     "id": 24,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 1543.03,
     "type": "income",
     "category": "Shopping",
@@ -281,7 +281,7 @@
   },
   {
     "id": 36,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 2913.02,
     "type": "income",
     "category": "Entertainment",
@@ -297,7 +297,7 @@
   },
   {
     "id": 38,
-    "description": "Restaurant dine\u2011in expense",
+    "description": "Restaurant dine‑in expense",
     "amount": 423.9,
     "type": "expense",
     "category": "Shopping",
@@ -425,7 +425,7 @@
   },
   {
     "id": 54,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 2232.47,
     "type": "income",
     "category": "Work",
@@ -665,7 +665,7 @@
   },
   {
     "id": 84,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 824.92,
     "type": "income",
     "category": "Bills",
@@ -673,7 +673,7 @@
   },
   {
     "id": 85,
-    "description": "Restaurant dine\u2011in expense",
+    "description": "Restaurant dine‑in expense",
     "amount": 308.55,
     "type": "expense",
     "category": "Bills",
@@ -801,7 +801,7 @@
   },
   {
     "id": 101,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 375.65,
     "type": "income",
     "category": "Bills",
@@ -889,7 +889,7 @@
   },
   {
     "id": 112,
-    "description": "Restaurant dine\u2011in expense",
+    "description": "Restaurant dine‑in expense",
     "amount": 303.98,
     "type": "expense",
     "category": "Other",
@@ -945,7 +945,7 @@
   },
   {
     "id": 119,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 1319.93,
     "type": "income",
     "category": "Health",
@@ -977,7 +977,7 @@
   },
   {
     "id": 123,
-    "description": "Restaurant dine\u2011in expense",
+    "description": "Restaurant dine‑in expense",
     "amount": 428.87,
     "type": "expense",
     "category": "Bills",
@@ -993,7 +993,7 @@
   },
   {
     "id": 125,
-    "description": "Restaurant dine\u2011in expense",
+    "description": "Restaurant dine‑in expense",
     "amount": 124.45,
     "type": "expense",
     "category": "Health",
@@ -1113,7 +1113,7 @@
   },
   {
     "id": 140,
-    "description": "Restaurant dine\u2011in expense",
+    "description": "Restaurant dine‑in expense",
     "amount": 44.39,
     "type": "expense",
     "category": "Shopping",
@@ -1193,7 +1193,7 @@
   },
   {
     "id": 150,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 151.11,
     "type": "income",
     "category": "Health",
@@ -1210,7 +1210,7 @@
   {
     "id": 152,
     "description": "Pharmacy medical supplies",
-    "amount": 66.0,
+    "amount": 66,
     "type": "expense",
     "category": "Health",
     "date": "2024-10-29"
@@ -1353,7 +1353,7 @@
   },
   {
     "id": 170,
-    "description": "Restaurant dine\u2011in expense",
+    "description": "Restaurant dine‑in expense",
     "amount": 358.56,
     "type": "expense",
     "category": "Transport",
@@ -1538,7 +1538,7 @@
   {
     "id": 193,
     "description": "Clothing store purchase",
-    "amount": 274.0,
+    "amount": 274,
     "type": "expense",
     "category": "Entertainment",
     "date": "2024-05-05"
@@ -1737,7 +1737,7 @@
   },
   {
     "id": 218,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 2852.56,
     "type": "income",
     "category": "Other",
@@ -1977,7 +1977,7 @@
   },
   {
     "id": 248,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 2939.8,
     "type": "income",
     "category": "Transport",
@@ -2057,7 +2057,7 @@
   },
   {
     "id": 258,
-    "description": "Restaurant dine\u2011in expense",
+    "description": "Restaurant dine‑in expense",
     "amount": 412.93,
     "type": "expense",
     "category": "Transport",
@@ -2273,7 +2273,7 @@
   },
   {
     "id": 285,
-    "description": "Restaurant dine\u2011in expense",
+    "description": "Restaurant dine‑in expense",
     "amount": 53.54,
     "type": "expense",
     "category": "Salary",
@@ -2433,7 +2433,7 @@
   },
   {
     "id": 305,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 347.04,
     "type": "income",
     "category": "Transport",
@@ -2497,7 +2497,7 @@
   },
   {
     "id": 313,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 1809.84,
     "type": "income",
     "category": "Shopping",
@@ -2521,7 +2521,7 @@
   },
   {
     "id": 316,
-    "description": "Restaurant dine\u2011in expense",
+    "description": "Restaurant dine‑in expense",
     "amount": 343.94,
     "type": "expense",
     "category": "Work",
@@ -2993,7 +2993,7 @@
   },
   {
     "id": 375,
-    "description": "Restaurant dine\u2011in expense",
+    "description": "Restaurant dine‑in expense",
     "amount": 272.95,
     "type": "expense",
     "category": "Entertainment",
@@ -3001,7 +3001,7 @@
   },
   {
     "id": 376,
-    "description": "Restaurant dine\u2011in expense",
+    "description": "Restaurant dine‑in expense",
     "amount": 122.21,
     "type": "expense",
     "category": "Work",
@@ -3049,7 +3049,7 @@
   },
   {
     "id": 382,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 2503.36,
     "type": "income",
     "category": "Other",
@@ -3209,7 +3209,7 @@
   },
   {
     "id": 402,
-    "description": "Restaurant dine\u2011in expense",
+    "description": "Restaurant dine‑in expense",
     "amount": 192.72,
     "type": "expense",
     "category": "Health",
@@ -3217,7 +3217,7 @@
   },
   {
     "id": 403,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 1111.29,
     "type": "income",
     "category": "Work",
@@ -3425,7 +3425,7 @@
   },
   {
     "id": 429,
-    "description": "Restaurant dine\u2011in expense",
+    "description": "Restaurant dine‑in expense",
     "amount": 370.86,
     "type": "expense",
     "category": "Other",
@@ -3569,7 +3569,7 @@
   },
   {
     "id": 447,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 1456.91,
     "type": "income",
     "category": "Other",
@@ -3617,7 +3617,7 @@
   },
   {
     "id": 453,
-    "description": "Restaurant dine\u2011in expense",
+    "description": "Restaurant dine‑in expense",
     "amount": 359.57,
     "type": "expense",
     "category": "Salary",
@@ -3793,7 +3793,7 @@
   },
   {
     "id": 475,
-    "description": "Restaurant dine\u2011in expense",
+    "description": "Restaurant dine‑in expense",
     "amount": 221.64,
     "type": "expense",
     "category": "Entertainment",
@@ -3889,7 +3889,7 @@
   },
   {
     "id": 487,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 2929.78,
     "type": "income",
     "category": "Health",
@@ -3930,7 +3930,7 @@
   {
     "id": 492,
     "description": "Gym membership monthly fee",
-    "amount": 97.0,
+    "amount": 97,
     "type": "expense",
     "category": "Transport",
     "date": "2024-07-18"
@@ -3961,7 +3961,7 @@
   },
   {
     "id": 496,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 2222.1,
     "type": "income",
     "category": "Health",
@@ -4025,7 +4025,7 @@
   },
   {
     "id": 504,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 1485.13,
     "type": "income",
     "category": "Shopping",
@@ -4089,7 +4089,7 @@
   },
   {
     "id": 512,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 2829.43,
     "type": "income",
     "category": "Salary",
@@ -4113,7 +4113,7 @@
   },
   {
     "id": 515,
-    "description": "Restaurant dine\u2011in expense",
+    "description": "Restaurant dine‑in expense",
     "amount": 199.25,
     "type": "expense",
     "category": "Transport",
@@ -4161,7 +4161,7 @@
   },
   {
     "id": 521,
-    "description": "Restaurant dine\u2011in expense",
+    "description": "Restaurant dine‑in expense",
     "amount": 144.59,
     "type": "expense",
     "category": "Shopping",
@@ -4241,7 +4241,7 @@
   },
   {
     "id": 531,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 2683.35,
     "type": "income",
     "category": "Salary",
@@ -4321,7 +4321,7 @@
   },
   {
     "id": 541,
-    "description": "Restaurant dine\u2011in expense",
+    "description": "Restaurant dine‑in expense",
     "amount": 355.88,
     "type": "expense",
     "category": "Salary",
@@ -4553,7 +4553,7 @@
   },
   {
     "id": 570,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 232.72,
     "type": "income",
     "category": "Bills",
@@ -4633,7 +4633,7 @@
   },
   {
     "id": 580,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 412.98,
     "type": "income",
     "category": "Bills",
@@ -4737,7 +4737,7 @@
   },
   {
     "id": 593,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 2314.19,
     "type": "income",
     "category": "Shopping",
@@ -4794,7 +4794,7 @@
   {
     "id": 600,
     "description": "Mobile data recharge payment",
-    "amount": 391.0,
+    "amount": 391,
     "type": "expense",
     "category": "Transport",
     "date": "2024-10-13"
@@ -4873,7 +4873,7 @@
   },
   {
     "id": 610,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 1863.23,
     "type": "income",
     "category": "Salary",
@@ -5041,7 +5041,7 @@
   },
   {
     "id": 631,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 946.33,
     "type": "income",
     "category": "Salary",
@@ -5161,7 +5161,7 @@
   },
   {
     "id": 646,
-    "description": "Restaurant dine\u2011in expense",
+    "description": "Restaurant dine‑in expense",
     "amount": 267.77,
     "type": "expense",
     "category": "Entertainment",
@@ -5249,7 +5249,7 @@
   },
   {
     "id": 657,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 542.16,
     "type": "income",
     "category": "Entertainment",
@@ -5321,7 +5321,7 @@
   },
   {
     "id": 666,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 2527.65,
     "type": "income",
     "category": "Health",
@@ -5377,7 +5377,7 @@
   },
   {
     "id": 673,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 185.98,
     "type": "income",
     "category": "Entertainment",
@@ -5457,7 +5457,7 @@
   },
   {
     "id": 683,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 1520.74,
     "type": "income",
     "category": "Bills",
@@ -5585,7 +5585,7 @@
   },
   {
     "id": 699,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 2713.42,
     "type": "income",
     "category": "Work",
@@ -5633,7 +5633,7 @@
   },
   {
     "id": 705,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 545.94,
     "type": "income",
     "category": "Other",
@@ -5730,7 +5730,7 @@
   {
     "id": 717,
     "description": "Refund credited to account",
-    "amount": 2510.0,
+    "amount": 2510,
     "type": "income",
     "category": "Entertainment",
     "date": "2024-03-16"
@@ -5769,7 +5769,7 @@
   },
   {
     "id": 722,
-    "description": "Restaurant dine\u2011in expense",
+    "description": "Restaurant dine‑in expense",
     "amount": 309.07,
     "type": "expense",
     "category": "Work",
@@ -5841,7 +5841,7 @@
   },
   {
     "id": 731,
-    "description": "Restaurant dine\u2011in expense",
+    "description": "Restaurant dine‑in expense",
     "amount": 353.96,
     "type": "expense",
     "category": "Transport",
@@ -5881,7 +5881,7 @@
   },
   {
     "id": 736,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 924.45,
     "type": "income",
     "category": "Health",
@@ -5898,7 +5898,7 @@
   {
     "id": 738,
     "description": "Bonus payout from employer",
-    "amount": 1627.0,
+    "amount": 1627,
     "type": "income",
     "category": "Salary",
     "date": "2024-02-23"
@@ -5906,7 +5906,7 @@
   {
     "id": 739,
     "description": "Movie tickets at cinema",
-    "amount": 461.0,
+    "amount": 461,
     "type": "expense",
     "category": "Health",
     "date": "2024-03-21"
@@ -5953,7 +5953,7 @@
   },
   {
     "id": 745,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 2176.6,
     "type": "income",
     "category": "Health",
@@ -6097,7 +6097,7 @@
   },
   {
     "id": 763,
-    "description": "Restaurant dine\u2011in expense",
+    "description": "Restaurant dine‑in expense",
     "amount": 391.04,
     "type": "expense",
     "category": "Work",
@@ -6129,7 +6129,7 @@
   },
   {
     "id": 767,
-    "description": "Restaurant dine\u2011in expense",
+    "description": "Restaurant dine‑in expense",
     "amount": 115.96,
     "type": "expense",
     "category": "Health",
@@ -6265,7 +6265,7 @@
   },
   {
     "id": 784,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 1570.48,
     "type": "income",
     "category": "Health",
@@ -6457,7 +6457,7 @@
   },
   {
     "id": 808,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 1149.6,
     "type": "income",
     "category": "Transport",
@@ -6513,7 +6513,7 @@
   },
   {
     "id": 815,
-    "description": "Restaurant dine\u2011in expense",
+    "description": "Restaurant dine‑in expense",
     "amount": 479.4,
     "type": "expense",
     "category": "Entertainment",
@@ -6601,7 +6601,7 @@
   },
   {
     "id": 826,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 2047.5,
     "type": "income",
     "category": "Health",
@@ -6793,7 +6793,7 @@
   },
   {
     "id": 850,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 2627.63,
     "type": "income",
     "category": "Food",
@@ -6825,7 +6825,7 @@
   },
   {
     "id": 854,
-    "description": "Restaurant dine\u2011in expense",
+    "description": "Restaurant dine‑in expense",
     "amount": 403.96,
     "type": "expense",
     "category": "Health",
@@ -7001,7 +7001,7 @@
   },
   {
     "id": 876,
-    "description": "Restaurant dine\u2011in expense",
+    "description": "Restaurant dine‑in expense",
     "amount": 441.48,
     "type": "expense",
     "category": "Bills",
@@ -7049,7 +7049,7 @@
   },
   {
     "id": 882,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 584.43,
     "type": "income",
     "category": "Other",
@@ -7090,7 +7090,7 @@
   {
     "id": 887,
     "description": "Client invoice settlement",
-    "amount": 1529.0,
+    "amount": 1529,
     "type": "income",
     "category": "Health",
     "date": "2024-05-06"
@@ -7129,7 +7129,7 @@
   },
   {
     "id": 892,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 576.07,
     "type": "income",
     "category": "Health",
@@ -7193,7 +7193,7 @@
   },
   {
     "id": 900,
-    "description": "Restaurant dine\u2011in expense",
+    "description": "Restaurant dine‑in expense",
     "amount": 151.87,
     "type": "expense",
     "category": "Other",
@@ -7209,7 +7209,7 @@
   },
   {
     "id": 902,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 1382.95,
     "type": "income",
     "category": "Salary",
@@ -7217,7 +7217,7 @@
   },
   {
     "id": 903,
-    "description": "Restaurant dine\u2011in expense",
+    "description": "Restaurant dine‑in expense",
     "amount": 383.39,
     "type": "expense",
     "category": "Transport",
@@ -7225,7 +7225,7 @@
   },
   {
     "id": 904,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 1201.55,
     "type": "income",
     "category": "Other",
@@ -7241,7 +7241,7 @@
   },
   {
     "id": 906,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 220.77,
     "type": "income",
     "category": "Other",
@@ -7257,7 +7257,7 @@
   },
   {
     "id": 908,
-    "description": "Part\u2011time earnings received",
+    "description": "Part‑time earnings received",
     "amount": 2564.77,
     "type": "income",
     "category": "Work",
@@ -7650,7 +7650,7 @@
   {
     "id": 957,
     "description": "Commission income received",
-    "amount": 1786.0,
+    "amount": 1786,
     "type": "income",
     "category": "Food",
     "date": "2024-01-11"
@@ -7998,5 +7998,29 @@
     "type": "expense",
     "category": "Work",
     "date": "2024-06-29"
+  },
+  {
+    "id": 1001,
+    "description": "My daily income",
+    "amount": 2000,
+    "type": "expense",
+    "category": "Shopping",
+    "date": "2025-12-03"
+  },
+  {
+    "id": 1002,
+    "description": "My income",
+    "amount": 5,
+    "type": "income",
+    "category": "Salary",
+    "date": "2025-12-03"
+  },
+  {
+    "id": 1003,
+    "description": "my exp ",
+    "amount": 3,
+    "type": "expense",
+    "category": "Transport",
+    "date": "2025-12-03"
   }
 ]
